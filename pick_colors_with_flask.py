@@ -5,12 +5,8 @@ import cv2
 import numpy as np
 import utils
 
-'''
-export MPLBACKEND="pdf" 또는 "Agg"
-환경변수 반드시 설정해주고 실행시키기!
-'''
-
 app = Flask(__name__)
+
 
 @app.route('/pick/colors/<int:num>', methods=['POST'])
 def colorPicker(num):
@@ -44,6 +40,7 @@ def colorPicker(num):
         result.append(temp)
 
     return make_response(jsonify(colors=result))
+
 
 if __name__ == '__main__':
     app.run()

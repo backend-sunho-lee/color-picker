@@ -14,12 +14,23 @@ The file format does not matter. At least jpg and png are possible.
 - matplotlib
 - opencv
 
+```python
+pip3 install sklearn
+pip3 install scipy
+pip3 install matplotlib
+pip3 install opencv-python
+```
 
 ## How to use
 ### use with Flask
-1. run pick_colors_with_flask.py
+1. Set environment
+```
+export MPLBACKEND="pdf" or "Agg"
+```
 
-2. using Tool like PostMan
+2. run pick_colors_with_flask.py
+
+3. using Tool like PostMan
 ```
 POST /pick/colors/<int:num>
 Host: localhost:5000
@@ -29,7 +40,7 @@ Values: file, your image
 ```
 I recommend that you only include `num` up to 5
 
-3. get colors!
+4. get colors!
 ```
 {
     "colors": [
