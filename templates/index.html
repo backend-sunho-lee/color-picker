@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Picker</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="container-inside">
+      <div>
+        <input type="file" id="pic" name="pic" accept="image/*" onchange="previewFile()">
+        <input type="submit" id="imgSend">
+      </div>
+      <div>
+        <p>몇개를 픽하고 싶으신가요?
+          <select class="colorCnt">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-inside">
+      <img id="imgPreview" src="" alt="your image" style="display: none;" />
+    </div>
+
+    <div class="container-inside">
+        <div class="resColors" style="width: 50px; height: 50px; background-color: #ee008c;"></div>
+        <div class="resColors" style="width: 50px; height: 50px; background-color: #ee008c;"></div>
+        <div class="resColors" style="width: 50px; height: 50px; background-color: #ee008c;"></div>
+        <div class="resColors" style="width: 50px; height: 50px; background-color: #ee008c;"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/static/js/index.js"></script>
+</body>
+</html>

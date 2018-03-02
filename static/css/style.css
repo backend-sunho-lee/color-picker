@@ -1,0 +1,18 @@
+.container{
+  max-width: 860px;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.container-inside{
+  width: 100%;
+}
+
+.container-inside>div{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+img{
+  max-width: 100%;
+}

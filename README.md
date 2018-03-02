@@ -28,7 +28,7 @@ pip3 install opencv-python
 export MPLBACKEND="pdf" or "Agg"
 ```
 
-2. run pick_colors_with_flask.py
+2. run run.py
 
 3. using Tool like PostMan
 ```

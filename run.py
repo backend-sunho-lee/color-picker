@@ -1,11 +1,17 @@
-from flask import Flask, request, make_response, jsonify
+from flask import Flask, request, make_response, jsonify, render_template
 
 from sklearn.cluster import KMeans
 import cv2
 import numpy as np
 import utils
+import os, sys
 
 app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 
 @app.route('/pick/colors/<int:num>', methods=['POST'])
