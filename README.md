@@ -3,7 +3,7 @@ pick most used colors.
 
 The file format does not matter. At least jpg and png are possible.
 
-사진에서 많이 사용된 색을 골라줍니다. 5개까지 제대로 나오는 듯?
+이미지에서 많이 사용된 색을 골라줍니다.
 
 코드를 작성하는 것보다 라이브러리 다운로드 받는게 더더더더더 힘들었습니다..
 
